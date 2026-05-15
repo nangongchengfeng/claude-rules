@@ -80,7 +80,8 @@
 ## Git 策略
 
 - [必须] 允许使用：`git status`、`git diff`、`git log`、`git branch`、`git show`。
-- [必须] 允许 `git commit`，但执行前必须征得用户确认。
+- [必须] 允许 `git commit`，但执行前必须征得用户确认。user.email "1794748404@qq.com"，user.name "nangongchengfeng"
+- [必须]  禁止出现 Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
 - [必须] 禁止 `git push`、`git merge`、`git rebase`、`git reset --hard`。
 - [必须] 禁止使用会丢弃用户改动的命令，除非用户明确批准。
 - [必须] 发现非本人造成的意外变更时，立即停止并询问用户。
@@ -194,3 +195,7 @@
 - 函数尽量控制在 30 行以内。
 
 如果遵守偏好会破坏项目一致性，以项目既有风格为准。
+
+本配置默认面向编码任务；若当前任务以文档、调研或非工程输出为主，可适当降低工程化约束
+
+
