@@ -15,8 +15,12 @@
 ## 使用方式
 
 1. 将对应模板复制到项目根目录或子目录
-2. 根据项目实际情况修改（数据库名、端口号、业务规则等）
-3. Claude Code 会在会话启动时自动读取 `CLAUDE.md`
+2. **修改 Git 用户信息**：将 `CLAUDE.md` 中 Git 策略部分的 `user.email` 和 `user.name` 替换为你自己的：
+   ```
+   user.email "your@email.com"，user.name "your-name"
+   ```
+3. 根据项目实际情况修改（数据库名、端口号、业务规则等）
+4. Claude Code 会在会话启动时自动读取 `CLAUDE.md`
 
 ```bash
 # 示例：Go 后端项目
